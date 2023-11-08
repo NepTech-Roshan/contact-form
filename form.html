@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html lang="en-US">
+     <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Peoject | 01</title>
+<style>
+*{
+  font-family:Monospace;
+  margin:0 auto;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  text-align:center;
+  width:600px;
+  height:auto;
+}
+section{
+  margin-top:40%;
+  width:500px;
+  height:auto;
+ text-align:left;
+  padding:20px;
+  border-radius:10px;
+  background-color:black;
+  color:white;
+}
+#heading{
+  padding:10px;
+  background-color:white;
+  color:black;
+  border:1px solid black;
+  border-radius:18px;
+  text-align:center;
+ }
+.fill{
+  width:100%;
+  background-color:white;
+  color:black;
+  outline:none;
+  padding:8px;
+  font-size:16px;
+  border-radius:6px;
+}
+.main{
+  font-size:20px;
+  margin:20px 0 15px 0;
+}
+textarea{
+  width:450px;
+  height:100px;
+}
+@media screen and (max-width:600px)
+{
+  body{
+    width:auto;
+    height:auto;
+  }
+  section{
+  margin-top:10%;
+    width:350px;
+  }
+  textarea{
+    width:200px;
+    height:90px;
+  }
+  .main {
+    font-size:15px;
+  }
+  #btn{
+    margin:8px 0 0 30%;
+  }
+}
+</style>
+     </head>
+   <body>
+     <form action="connect.php" method="post">
+       <section>
+         <div id="heading">
+           <h1 style="font-size:20px; font-weight:bold;">Contact Form</h1>
+           <h4 style="margin-top:10px;">Fill All The Requirements </h4>
+           </div>
+           <div class="main">
+               Your Name</br>
+             <input type="text" class="fill" placeholder="Your Full Name" name="FullName"  required /></br>
+             Your Email</br>
+             <input type="email" class="fill" placeholder="Your Email Id" name="Email" required/></br>
+             Password</br>
+             <input type="password" class="fill" placeholder="Your Password " name="Password"required/></br>
+             Message</br>
+            <textarea class="fill" placeholder="Your Message..." name="Message"></textarea></br>
+             Subject</br>
+            <select name="Subject" class="fill" >
+         <option value=""></option>
+         <option value="Computer">Computer</option>
+         <option value="Physics">Physics</option>
+         <option value="Chemistry"> Chemistry</option>
+         <option value="Biology"> Biology</option>
+         <option value="Maths"> Maths</option>
+      </select>
+           </br>
+           <input type="submit"/>
+           <input type="reset"/>
+           </div>
+         </section>
+       </form>
+     </body>
+     </html>
